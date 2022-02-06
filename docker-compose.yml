@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  ludimos-test:
+    container_name: ludimos-test
+    build : .
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/app
+      - /app/node_modules
